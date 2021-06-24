@@ -81,4 +81,4 @@ venv/
 
 db.sqlite3
 
-*/__pychache__/
+__pycache__/
