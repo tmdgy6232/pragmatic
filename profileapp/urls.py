@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.urls import path, include
 
+from profileapp.views import ProfileCreateView
 
 app_name = 'profileapp'
 
 urlpatterns = [
-    #path('hello_world/', hello_world, name = 'hello_world'),
+    path('create/', ProfileCreateView.as_view(), name='create'),
 ]
