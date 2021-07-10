@@ -7,4 +7,7 @@ class Project(models.Model):
     title = models.CharField(max_length=20,null=False)
     description = models.CharField(max_length=200, null=True)
     create_at = models.DateTimeField(auto_now=True)
-    
+
+    #obejct명 나가는거 처리
+    def __str__(self):
+        return f'{self.pk} : {self.title}'
